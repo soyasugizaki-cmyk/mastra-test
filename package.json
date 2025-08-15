@@ -1,0 +1,19 @@
+# package.json
+{
+  "name": "mastra-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "latest"
+  }
+}
+
+# index.js（基本的なMCPサーバー）
+import { Server } from '@modelcontextprotocol/sdk/server/index.js';
+
+const server = new Server({
+  name: 'mastra-test-server',
+  version: '1.0.0.0',
+});
+
+server.listen();
