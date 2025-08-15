@@ -1,0 +1,11 @@
+name: mastra-test-server
+version: 1.0.0.0
+runtime: node
+entrypoint: index.js
+build:
+  commands:
+    - npm install
+  artifacts:
+    - node_modules/
+    - index.js
+    - package.json
